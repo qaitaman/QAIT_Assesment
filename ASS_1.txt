@@ -1,0 +1,28 @@
+{
+    "id": 1,
+    "question_text": "Return the count of alphabets in the input text.\n",
+    "test_input": {
+        "text": "The best programs are written badly.\n"
+    },
+    "sample_input": {
+        "text": "The best programs are written badly.\n"
+    },
+    "sample_output": {
+        "count": 30
+    }
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\
+
+PYTHON BASED ANSWERS
+
+id:1
+
+list1 = "The best programs are written badly"
+count = len(list1)
+a = 0
+for i in range(0, count):
+    if list1[i] == " ":
+        a+=1
+    
+print(count - a)

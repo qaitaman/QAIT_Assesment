@@ -1,0 +1,34 @@
+{
+    "id": 4,
+    "question_text": "Return the count of occurence for each vowel in the input string.\n",
+    "test_input": {
+        "text": "A great great place."
+    },
+    "sample_input": {
+        "text": "A great great place."
+    },
+    "sample_output": {
+        "a": 4,
+        "e": 3,
+        "i": 0,
+        "o": 0,
+        "u": 0
+    }
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+PYTHON BASE ANSWER
+
+id:4
+
+string = "A great great place."
+lstring = string.lower()
+vowel_counts = {}
+for vowel in "aeiou":
+    count = lstring.count(vowel)
+    vowel_counts[vowel] = count
+print(vowel_counts)
+for i in sorted (vowel_counts.keys()) :  
+     print(i, end = " ") 
+     print(vowel_counts[i])
+     

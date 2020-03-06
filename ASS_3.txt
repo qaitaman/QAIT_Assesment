@@ -1,0 +1,33 @@
+{
+    "id": 3,
+    "question_text": "Return the count of sentences in the input string.\n",
+    "test_input": {
+        "text": "The best programs are written badly.\n"
+    },
+    "sample_input": {
+        "text": "The best programs are written badly.\n"
+    },
+    "sample_output": {
+        "sentenceCount": 1
+    }
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+PYTHON BASE ANSWER
+
+id:3
+
+
+le = "The best programs are written badly."
+# print('Total words:   ', len(le.split()))
+flag = 0
+a = "."
+b=le[-1]
+if a != b:
+    flag=1
+c = le.count('.')
+
+print('sentenceCount    ', flag + c)
+# print(flag)
+# print(le[-1])
+# print(a)

@@ -1,0 +1,58 @@
+{
+    "id": 7,
+    "question_text": "The challenge is to create a simple Card Deck Game.\nThe Rules:\n  - The game can have n number of players.\n  - Each player starts with a pot amount of 1000 Chips.\n  - Each player draws two cards from the Deck turn-by-turn.\n  - For each card drawn in the turn:\n      - Depending upon the suit of the card, following transactions are done on the player's pot amount:\n          - Spade (SP): Credit 100 chips.\n          - Club (CL): Credit 50 chips.\n          - Heart (HT): Debit 100 chips.\n          - Diamond (DD): Debit 50 chips.\n  - After total 5 chances for each player, the one with the highest pot wins.\n\nInput:\n  - A list of the cards drawn by each player in all turns:\n    'list': [\n      {\n        'player1': [[SP, SP], [SP, CL], [SP, DD], [CL, HT], [DD, CL]],\n        'player2': [[DD, DD], [CL, HT], [SP, HT], [DF, SP], [DD, SP]],\n      }\n    ]\n\nOutput:\n  - The name of winner:\n    {\n      'winner': player1\n    }\n",
+    "test_input": {
+        "list": "{'player1': [['SP', 'SP'], ['SP', 'DD']], 'player2': [['DD', 'DD'], ['DD', 'SP']]}"
+    },
+    "sample_input": {
+        "list": "{'player1': [['SP', 'SP'], ['SP', 'DD']], 'player2': [['DD', 'DD'], ['DD', 'SP']]}"
+    },
+    "sample_output": {
+        "winner": "player2"
+    }
+}
+
+////////////////////////////////////////////////////
+
+PYTHON BASED ANSWERS
+
+print("Enter Number Of Games You Want To Play")
+GT = int(input())
+SPP = {'SP':100,'CL':50,'HT':-100,'DD':-50}
+PP = []
+PP1 = []
+PP2 = []
+P1 = 1000
+P2 = 1000
+# def get_key(val): 
+#     for key, value in SPP.items(): 
+#          if val == value: 
+#              return key 
+  
+# SP = 100
+# CL = 50
+# HT = -100
+# DD = -50
+print("Enter Person 1")
+for i in range(0,GT):
+    for j in range(0, 2):
+        PP = input()
+        A = SPP[PP]
+        P1 +=A
+print("Enter Person 2")
+for i in range(0,GT):
+    for j in range(0, 2):
+        PP = input()
+        A = SPP[PP]
+        P2 +=A
+        
+if P1>P1:
+    print("player1")
+else:
+    print("player2")
+    
+# print(P1)
+
+
+        
+

@@ -1,0 +1,35 @@
+{
+    "id": 6,
+    "question_text": "Return a list of all prime numbers between the given range (both ends not included).\n",
+    "test_input": {
+        "range": "[1, 9]"
+    },
+    "sample_input": {
+        "list": "[2, 5]"
+    },
+    "sample_output": {
+        "list": [
+            3
+        ]
+    }
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+PYTHON BASED ANSWER
+
+id:6
+
+l= int(input())
+u= int(input())
+li = []
+a = 0
+for num in range(l, u + 1):
+   if num > 1:
+       for i in range(2, num):
+           
+           if (num % i) == 0:
+               break
+       else:
+           li.append(num)
+           a += 1
+print(li)

@@ -1,0 +1,22 @@
+{
+    "id": 2,
+    "question_text": "Return the count of words in the input string.\n",
+    "test_input": {
+        "text": "The best programs are written badly.\n"
+    },
+    "sample_input": {
+        "text": "The best programs are written badly.\n"
+    },
+    "sample_output": {
+        "wordCount": 6
+    }
+}
+//////////////////////\\\\\\\\\\\\\\\\\\\\
+
+PYTHON BASED ANSWERS
+
+id:2
+
+list1 = "The best programs are written badly   dfg"
+count = len(list1.split());
+print (str(count)) 

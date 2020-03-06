@@ -1,0 +1,38 @@
+{
+    "id": 5,
+    "question_text": "Remove the duplicate elements from the given list and list non-duplicate elements in order of their occurence.\n",
+    "test_input": {
+        "list": "[1, 1, 1, 6, 3, 2]"
+    },
+    "sample_input": {
+        "list": "[1, 1, 1, 6, 3, 2]"
+    },
+    "sample_output": {
+        "list": [
+            1,
+            6,
+            3,
+            2
+        ]
+    }
+}
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+PYTHON BASE ANSWER
+
+
+id:5
+
+list1 = []
+n = int(input("Enter number of elements : ")) 
+for i in range(0, n): 
+    ele = int(input()) 
+    list1.append(ele)
+def myfunction(x):
+  return list(dict.fromkeys(x))
+
+mylist = myfunction(list1)
+print(mylist)
